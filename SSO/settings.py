@@ -25,7 +25,7 @@ SECRET_KEY = 'y)o4z%0@06j--^fm9hj&!c#bin7vl+pw12$g)d8wcicag(zh%-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.github',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
-    'SSO',
+    'SingleSignOn',
 
 
 ]
@@ -138,3 +138,4 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
    
 ]
+SITE_ID=1
