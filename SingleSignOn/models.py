@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import SingleSignOn
+from django.contrib.auth.models import Users
 class SSOProvider(models.Model):
     name = models.CharField(max_length=100)  
     client_id = models.CharField(max_length=255)
